@@ -1,0 +1,63 @@
+.header {
+    grid-area: header;
+    background-color: #203040;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand a {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__links a:hover {
+    color: #ff8000;
+}
+
+.header__brand button {
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    position: fixed;
+    transition: all .5s;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar__closeButton {
+    border-radius: 50%;
+    border: .1rem solid #000;
+    height: 3rem;
+    width: 3rem;
+    padding: .5rem;
+    font-size: 2rem;
+    padding-top: 0;
+    cursor: pointer;
+    position: absolute;
+    right: .5rem;
+    top: 1.5rem;
+}
